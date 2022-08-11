@@ -1,0 +1,109 @@
+body {
+    font-family: arial, sans-serif;
+    --theme-color: #1bbcab;
+    --darker-theme-color: #15a091;
+    --blue: #3e80f0;
+}
+main {
+    max-width: 650px;
+    margin: auto;
+}
+.card {
+    border: 1px solid gray;
+    border-radius: 0.75rem;
+}
+.material-btn {
+    border: 0;
+    background-color: transparent;
+    font-size: 1.25rem;
+}
+.material-btn:hover {
+    transition: 0.3s background-color;
+    background-color: lightgrey;
+    border-radius: 0.25rem;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+#level-btn {
+    color: grey;
+}
+#share-btn {
+    color: var(--blue);
+}
+.players {
+    display: flex;
+    justify-content: center;
+}
+.player {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 15rem;
+    padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px;
+    border-radius: 0.5rem;
+    font-size: x-large;
+    margin: 5px;
+}
+.player.current {
+    border-bottom: 3px var(--theme-color) solid;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 3px;
+}
+.current-player {
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem;
+    align-items: center;
+}
+.current-player i {
+    font-size: 1.5rem;
+}
+.current-player .turn {
+    color: gray;
+}
+.game-board {
+    background-color: var(--theme-color);
+    padding: 1rem;
+}
+.game-board .outer-box {
+    background-color: var(--darker-theme-color);
+    width: fit-content;
+    margin: auto;
+}
+.game-board .row {
+    display: flex;
+}
+.game-board .box {
+    display: flex;
+    width: 80px;
+    height: 80px;
+    background-color: var(--theme-color);
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}
+.game-board .player-x {
+    color: #555;
+}
+.game-board .player-o {
+    color: white;
+}
+.game-board .space {
+    width: 8px;
+    height: 8px;
+}
+#restart-game-btn {
+    width: 100%;
+    padding: 0.75rem;
+    color: var(--theme-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.footer {
+    text-align: end;
+    font-style: italic;
+    color: gray;
+    padding: 0.25rem;
+}
