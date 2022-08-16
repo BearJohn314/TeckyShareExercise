@@ -43,7 +43,7 @@ function setupCalculatorOps(event) {
         expression.push(parseFloat(current.innerHTML));
         current.innerHTML = "";
     }
-    // Each numbers and each operators are seperately saved in different elements of the array
+    // Each numbers and each operators are separately saved in different elements of the array
     switch(id){
         case "add":
             display.innerHTML = display.innerHTML + "+";
