@@ -107,8 +107,11 @@ document.querySelector('#answer').addEventListener("click", function(event) {
 
 function calculation(expression) {
     // Not enough operators or numbers for calculation
-    if (expression.length < 3) {
+    if (expression.length == 2) {
         return "error";
+    }
+    if (expression.length == 1) {
+        return expression[0];
     }
     // length = 3 means a simple calculation
     if (expression.length == 3) {
