@@ -2,6 +2,10 @@ let Ans = undefined;
 let answerCalculated = false;
 let expression = []
 
+window.addEventListener('load',(event)=>{
+    display.innerHTML = ""
+})
+
 // display is used to show the whole expression, while current is used to show the latest number entered
 const numbers = document.querySelectorAll('div#panelContainer > .num');
 for (let number of numbers) {
@@ -25,6 +29,7 @@ for (let operator of operators) {
 }
 
 function setupCalculatorOps(event) {
+    console.log(display.innerHTML.length)
     const id = event.target.id;
     // Clear the screen and use Ans to continue a new calculation
     if (answerCalculated == true) {
